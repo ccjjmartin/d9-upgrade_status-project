@@ -29,7 +29,6 @@
 ## 9. git init, add, commit and we should be ready to go.. should be...
 ## I called my repo 
 
-# cd ~/Documents/d9-ready # make sure the folder is the name of the folder with composer.son above /web
 git checkout master # just make sure.
 
 ## Open the csv of the list of allllllll the modules
@@ -72,10 +71,12 @@ drush pm:uninstall $MODULENAME -y
 
 composer remove ${col2}
 
+rm -rf web/modules/contrib/$MODULENAME
+
 # Cheap way out of dependency hell or awaiting composer remove, just reset back to the last commit.  
 git reset --hard
 git add .
-git commit -m 'what commit?'
+git commit -m '${MODULENAME}'
 git checkout master
 
 ## Done with the loop
