@@ -56,6 +56,7 @@ echo $MODULENAME
 git checkout -b $MODULENAME
 
 # Install the module with composer
+chmod u+w web/sites/default/
 composer require ${col2}
 
 # YOU MUST ENABLE THE MODULE TO MAKE upgrade_status:checkstyle work
