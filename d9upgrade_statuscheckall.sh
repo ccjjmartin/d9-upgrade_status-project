@@ -54,27 +54,27 @@ echo $MODULENAME
 git checkout -b $MODULENAME
 
 # Install the module with composer
-chmod u+w drupal/web/sites/default/
+chmod u+w web/sites/default/
 php composer require ${col2}
 
-/app/drupal/vendor/bin/drush si minimal --site-name=test --db-url=mysql://drupal8:drupal8@database:3306/drupal8 -y
+/app/vendor/bin/drush si minimal --site-name=test --db-url=mysql://drupal8:drupal8@database:3306/drupal8 -y
 
 # YOU MUST ENABLE THE MODULE TO MAKE upgrade_status:checkstyle work
-/app/drupal/vendor/bin/drush pm:enable upgrade_status $MODULENAME -y
+/app/vendor/bin/drush pm:enable upgrade_status $MODULENAME -y
 
 
 ## Push to a .xml file
-/app/drupal/vendor/bin/drush upgrade_status:checkstyle ${MODULENAME} > ./reports/${MODULENAME}.xml
+/app/vendor/bin/drush upgrade_status:checkstyle ${MODULENAME} > ./reports/${MODULENAME}.xml
 
 # grep the hash and push it to the bottom of the file...Wait, should I be doing this? Would it matter?
 # composer show -i drupal/${MODULENAME} | grep source >> ../reports/${MODULENAME}.xml
 
 # clean up config
-/app/drupal/vendor/bin/drush pm:uninstall $MODULENAME -y
+/app/vendor/bin/drush pm:uninstall $MODULENAME -y
 
 php composer remove ${col2}
 
-rm -rf drupal/web/modules/contrib/$MODULENAME
+rm -rf web/modules/contrib/$MODULENAME
 
 # Cheap way out of dependency hell or awaiting composer remove, just reset back to the last commit.
 git reset --hard

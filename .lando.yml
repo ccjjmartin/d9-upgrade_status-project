@@ -11,14 +11,14 @@ config:
 services:
   appserver:
     build:
-      - "cd /app/drupal && chmod u+w web/sites/default"
-      - "cd /app/drupal && COMPOSER_PROCESS_TIMEOUT=600 composer install"
-      - "cd /app/drupal && chmod u+w web/sites/default"
+      - "chmod u+w web/sites/default"
+      - "COMPOSER_PROCESS_TIMEOUT=600 composer install"
+      - "chmod u+w web/sites/default"
 
 tooling:
   drush:
     service: appserver
-    cmd: /app/drupal/vendor/bin/drush --root=/app/drupal/web
+    cmd: /app/vendor/bin/drush --root=/app/web
 
   check:
     service: appserver
@@ -26,7 +26,7 @@ tooling:
     cmd:
       - 'git checkout master'
       - 'chmod u+w web/sites/default'
-      - '/app/drupal/vendor/bin/drush pm:enable upgrade_status -y'
+      - '/app/vendor/bin/drush pm:enable upgrade_status -y'
       - '/app/d9upgrade_statuscheckall.sh'
 
   clean:
