@@ -55,7 +55,7 @@ git checkout -b $MODULENAME
 
 # Install the module with composer
 chmod u+w drupal/web/sites/default/
-composer require ${col2}
+php composer require ${col2}
 
 /app/drupal/vendor/bin/drush si minimal --site-name=test --db-url=mysql://drupal8:drupal8@database:3306/drupal8 -y
 
@@ -64,7 +64,7 @@ composer require ${col2}
 
 
 ## Push to a .xml file
-/app/drupal/vendor/bin/drush upgrade_status:checkstyle ${MODULENAME} > ../reports/${MODULENAME}.xml
+/app/drupal/vendor/bin/drush upgrade_status:checkstyle ${MODULENAME} > ./reports/${MODULENAME}.xml
 
 # grep the hash and push it to the bottom of the file...Wait, should I be doing this? Would it matter?
 # composer show -i drupal/${MODULENAME} | grep source >> ../reports/${MODULENAME}.xml
@@ -72,7 +72,7 @@ composer require ${col2}
 # clean up config
 /app/drupal/vendor/bin/drush pm:uninstall $MODULENAME -y
 
-composer remove ${col2}
+php composer remove ${col2}
 
 rm -rf drupal/web/modules/contrib/$MODULENAME
 
