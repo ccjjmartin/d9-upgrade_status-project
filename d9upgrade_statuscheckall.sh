@@ -31,8 +31,6 @@
 
 git checkout master # just make sure.
 
-cd drupal
-
 ## Open the csv of the list of allllllll the modules
 INPUT=list.csv
 
@@ -56,11 +54,13 @@ echo $MODULENAME
 git checkout -b $MODULENAME
 
 # Install the module with composer
-chmod u+w web/sites/default/
+chmod u+w drupal/web/sites/default/
 composer require ${col2}
 
+/app/drupal/vendor/bin/drush si minimal --site-name=test --db-url=mysql://drupal8:drupal8@database:3306/drupal8 -y
+
 # YOU MUST ENABLE THE MODULE TO MAKE upgrade_status:checkstyle work
-/app/drupal/vendor/bin/drush pm:enable $MODULENAME -y
+/app/drupal/vendor/bin/drush pm:enable upgrade_status $MODULENAME -y
 
 
 ## Push to a .xml file
@@ -74,7 +74,7 @@ composer require ${col2}
 
 composer remove ${col2}
 
-rm -rf web/modules/contrib/$MODULENAME
+rm -rf drupal/web/modules/contrib/$MODULENAME
 
 # Cheap way out of dependency hell or awaiting composer remove, just reset back to the last commit.
 git reset --hard
