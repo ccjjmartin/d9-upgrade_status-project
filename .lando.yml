@@ -11,9 +11,9 @@ config:
 services:
   appserver:
     build:
-      - "chmod u+w web/sites/default"
-      - "COMPOSER_PROCESS_TIMEOUT=600 composer install"
-      - "chmod u+w web/sites/default"
+      - 'test -d " web/sites/default" && chmod u+w web/sites/default || echo "this must be your first install"'
+      - 'composer install'
+      - 'chmod u+w web/sites/default'
 
 tooling:
   drush:
