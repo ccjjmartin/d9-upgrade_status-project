@@ -55,6 +55,7 @@ tooling:
     description: Run D9 Upgrade Status Check against your csv
     cmd:
       - 'git checkout master; git branch | grep -v "master" | xargs git branch -D'
+      - 'git reset --hard HEAD'
 
     options:
       instance:
