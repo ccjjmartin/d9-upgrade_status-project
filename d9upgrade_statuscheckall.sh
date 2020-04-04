@@ -32,7 +32,7 @@
 git checkout master # just make sure.
 
 ## Open the csv of the list of allllllll the modules
-INPUT=modulelistmachinenames1.csv
+INPUT=list.csv
 
 ##Safe way to deal with Internal File Separator or IFS resets
 OLDIFS=$IFS
