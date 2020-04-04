@@ -1,4 +1,4 @@
-name: d9-upgrade-status
+name: d9-upgrade-status-2
 recipe: drupal8
 config:
   php: '7.2'
