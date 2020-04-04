@@ -49,7 +49,8 @@ composer create-project drupal/recommended-project ${SITENAME}
 
 cd ${SITENAME}
 
-php ./web/core/scripts/drupal quick-start minimal
+php ./web/core/scripts/drupal quick-start minimal &
+sleep 10
 
 
 echo 'make sure modulelistmachinenames1.csv and script is in place'
