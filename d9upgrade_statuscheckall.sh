@@ -78,8 +78,7 @@ rm -rf web/modules/contrib/$MODULENAME
 
 # Cheap way out of dependency hell or awaiting composer remove, just reset back to the last commit.
 git reset --hard
-git add .
-git commit -m '${MODULENAME}'
+git branch -D $MODULENAME
 git checkout master
 
 ## Done with the loop
