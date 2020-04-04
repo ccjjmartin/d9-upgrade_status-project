@@ -27,9 +27,10 @@
 ## 8. `drush pm:enable upgrade_status -y`(Super important to make drush upgrade_status:checkstyle work)
 ##
 ## 9. git init, add, commit and we should be ready to go.. should be...
-## I called my repo
 
 git checkout master # just make sure.
+
+mkdir reports
 
 ## Open the csv of the list of allllllll the modules
 INPUT=list.csv
@@ -55,7 +56,7 @@ git checkout -b $MODULENAME
 
 # Install the module with composer
 chmod u+w web/sites/default/
-composer require ${col2} --prefer-dist
+composer require ${col2}
 
 /app/vendor/bin/drush si minimal --site-name=test --db-url=mysql://drupal8:drupal8@database:3306/drupal8 -y
 
@@ -64,7 +65,7 @@ composer require ${col2} --prefer-dist
 
 
 ## Push to a .xml file
-/app/vendor/bin/drush upgrade_status:checkstyle ${MODULENAME} > ./reports/${MODULENAME}.xml
+/app/vendor/bin/drush upgrade_status:checkstyle ${MODULENAME} > reports/${MODULENAME}.xml
 
 # grep the hash and push it to the bottom of the file...Wait, should I be doing this? Would it matter?
 # composer show -i drupal/${MODULENAME} | grep source >> ../reports/${MODULENAME}.xml
