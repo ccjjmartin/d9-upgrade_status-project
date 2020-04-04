@@ -9,13 +9,13 @@ Hit me up on drupal (mcdwayne) or midcamp slack (dwaynemcdaniel) for questions a
 
 to use lando, do this:
 
-1.`lando start` to build the environment
+1.`chmod +rx *.sh` to make sure the script has permissions
 
-2.`lando serve` to start the Drupal server
+2.`lando start` to build the environment
 
-3. drop the csv into the project's web folder (or modify the script to point where you like)
+3.`lando serve` to start the Drupal server
 
-4. `chmod +rx *.sh` to make sure the script has permissions
+4. drop the csv into the project's web folder (or modify the script to point where you like)
 
 5. check local permissions to make sure others can write to your 'reports' file
 
