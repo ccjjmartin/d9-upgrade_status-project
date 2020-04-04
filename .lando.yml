@@ -8,6 +8,7 @@ services:
       ports:
         - "8888"
     build:
+      - "cd /app/drupal && chmod u+w web/sites/default"
       - "cd /app/drupal && COMPOSER_PROCESS_TIMEOUT=600 composer install"
       - "cd /app/drupal && chmod u+w web/sites/default"
 
