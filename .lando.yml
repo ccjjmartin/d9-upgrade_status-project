@@ -4,9 +4,6 @@ services:
   drupal1:
     type: php:7.2
     via: cli
-    overrides:
-      ports:
-        - "8888"
     build:
       - "cd /app/drupal && chmod u+w web/sites/default"
       - "cd /app/drupal && COMPOSER_PROCESS_TIMEOUT=600 composer install"
@@ -16,7 +13,13 @@ proxy:
   drupal1:
     - myapp.lndo.site:8888
 
-tooling:
+  drupal2:
+    type: php:7.2
+    via: cli
+
+  drupal3:
+    type: php:7.2
+    via: cli
 
   drush:
     service: drupal1
@@ -35,11 +38,13 @@ tooling:
         describe: Run check in different service
         alias:
           - i
+
   check:
     service: :instance
     description: Run D9 Upgrade Status Check against your csv
     cmd:
       - 'git checkout master'
+      - 'chmod u+w web/sites/default'
       - '/app/drupal/vendor/bin/drush pm:enable upgrade_status -y'
       - '/app/d9upgrade_statuscheckall.sh'
 
@@ -63,6 +68,3 @@ tooling:
         describe: Run check in different instance
         alias:
           - i
-
-excludes:
-  - drupal

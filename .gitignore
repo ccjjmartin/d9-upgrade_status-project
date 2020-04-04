@@ -1,4 +1,7 @@
-/*.csv
-/drupal/vendor/
-/drupal/web
-
+reports/
+vendor/
+web/
+*.csv
+*.xml
+/.editorconfig
+/.gitattributes
