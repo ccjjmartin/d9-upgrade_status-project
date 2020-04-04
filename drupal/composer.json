@@ -32,6 +32,9 @@
     },
     "extra": {
         "drupal-scaffold": {
+            "excludes": [
+                "sites/default/default.services.yml"
+            ],
             "locations": {
                 "web-root": "web/"
             }
