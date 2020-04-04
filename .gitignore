@@ -1,6 +1,6 @@
-reports/*
-vendor/*
-web/*
+reports/
+vendor/
+web/
 /*.csv
 /.editorconfig
 /.gitattributes
