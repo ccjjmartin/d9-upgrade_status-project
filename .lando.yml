@@ -4,29 +4,47 @@ services:
   drupal1:
     type: php:7.2
     via: cli
+    overrides:
+      environment:
+        INPUT: "../modulelistmachinenames1.csv"
     build:
-      - "rm -f composer.lock"
-      - "composer install"
+      - "mkdir -p /app/reports && chmod 777 /app/reports"
+      - "rm -rf /app/drupal1/.git"
+      - "git clone --no-checkout https://github.com/AaronFeledy/d9-upgrade_status-project.git temp"
+      - "mv /app/temp/.git /app/drupal1 && rm -rf temp"
+      - "cd drupal1 && git reset --hard HEAD"
+      - "cd drupal1 && composer install"
+      - "cd /app/drupal1 && chmod +rx *.sh"
+      - "rm -f /app/drupal1/.lando.yml"
+      - "cd /app/drupal1 && git add -A . && git commit -m Ready!"
 
   drupal2:
     type: php:7.2
     via: cli
+    overrides:
+      environment:
+        INPUT: "../modulelistmachinenames2.csv"
 
   drupal3:
     type: php:7.2
     via: cli
+    overrides:
+      environment:
+        INPUT: "../modulelistmachinenames3.csv"
 
   drupal4:
     type: php:7.2
     via: cli
+    overrides:
+      environment:
+        INPUT: "../modulelistmachinenames4.csv"
 
 tooling:
-    
   serve:
     service: :instance
     description: Run D9 Upgrade Status Check against your csv
     cmd:
-      - "php /app/web/core/scripts/drupal quick-start minimal --no-interaction --suppress-login"
+      - bash -c "php /app/$LANDO_SERVICE_NAME/web/core/scripts/drupal quick-start minimal --no-interaction --suppress-login"
     options:
       instance:
         default: drupal1
@@ -38,17 +56,36 @@ tooling:
     service: :instance
     description: Run D9 Upgrade Status Check against your csv
     cmd:
-      - 'chmod u+w web/sites/default'
-      - '/app/vendor/bin/drush pm:enable upgrade_status -y'
-      - 'export PATH="/app/vendor/bin:$PATH" && /app/d9upgrade_statuscheckall.sh'
+      - bash -c "chmod u+w /app/$LANDO_SERVICE_NAME/web/sites/default"
+      - bash -c "cd /app/$LANDO_SERVICE_NAME && vendor/bin/drush pm:enable upgrade_status -y"
+      - bash -c "cd /app/$LANDO_SERVICE_NAME && export PATH=/app/$LANDO_SERVICE_NAME/vendor/bin:$PATH && . d9upgrade_statuscheckall.sh"
     options:
       instance:
         default: drupal1
-        describe: Run check in different instance
+        describe: Run check in a different instance.
         alias:
           - i
 
+  gimme4:
+      service: drupal2
+      description: Prepare a total of 4 instances for running the script.
+      cmd:
+        - "echo Preparing..."
+        - "git clone https://github.com/AaronFeledy/d9-upgrade_status-project.git drupal2"
+        - "cd /app/drupal2 && composer install"
+        - "cd /app/drupal2 && chmod +rx *.sh"
+        - "echo Copying files to drupal3..."
+        - "cp -a drupal2 drupal3"
+        - "echo Copying files to drupal4..."
+        - "cp -a drupal2 drupal4"
+        - "echo Done creating instances drupal2 drupal3 and drupal4."
+        - "echo Start the instances like so: lando serve -i drupal2"
+        - "echo Run the checks like so: lando check -i drupal2"
+        - "echo Place all CSVs together in the root of this project, numbered for each environment."
+        - "echo Instances will load CSVs with corresponding numbers. e.g. drupal3 will load modulelistmachinenames3.csv"
+
 excludes:
-  - vendor
-  - web
-  
+  - drupal1
+  - drupal2
+  - drupal3
+  - drupal4
