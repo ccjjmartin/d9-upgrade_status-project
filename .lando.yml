@@ -39,7 +39,7 @@ tooling:
     service: :instance
     description: Run D9 Upgrade Status Check against your csv
     cmd:
-      - 'git checkout master; git branch | grep -v "master" | xargs git branch -D'
+      - 'git checkout master'
       - '/app/drupal/vendor/bin/drush pm:enable upgrade_status -y'
       - '/app/d9upgrade_statuscheckall.sh'
 
