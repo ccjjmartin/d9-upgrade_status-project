@@ -61,7 +61,7 @@ drush pm:enable $MODULENAME -y
 
 
 ## Push to a .xml file
-drush upgrade_status:checkstyle ${MODULENAME} > ../reports/${MODULENAME}.xml 
+drush upgrade_status:checkstyle ${MODULENAME} > ./reports/${MODULENAME}.xml 
 
 # grep the hash and push it to the bottom of the file...Wait, should I be doing this? Would it matter?
 # composer show -i drupal/${MODULENAME} | grep source >> ../reports/${MODULENAME}.xml

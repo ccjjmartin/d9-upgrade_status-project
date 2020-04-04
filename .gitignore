@@ -1,1 +1,7 @@
+reports/
+vendor/
+web/
 /*.csv
+/.editorconfig
+/.gitattributes
+composer.lock
