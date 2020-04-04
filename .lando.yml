@@ -50,5 +50,18 @@ tooling:
         alias:
           - i
 
+  clean:
+    service: :instance
+    description: Run D9 Upgrade Status Check against your csv
+    cmd:
+      - 'git checkout master; git branch | grep -v "master" | xargs git branch -D'
+
+    options:
+      instance:
+        default: drupal1
+        describe: Run check in different instance
+        alias:
+          - i
+
 excludes:
   - drupal
