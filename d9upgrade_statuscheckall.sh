@@ -31,8 +31,10 @@
 
 git checkout master # just make sure.
 
+cd drupal
+
 ## Open the csv of the list of allllllll the modules
-INPUT=drupal/list.csv
+INPUT=list.csv
 
 ##Safe way to deal with Internal File Separator or IFS resets
 OLDIFS=$IFS
