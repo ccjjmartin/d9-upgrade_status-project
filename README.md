@@ -21,7 +21,7 @@ to use lando, do this:
 
 6. time for one one more final `git commit -am 'ready to roll'` 
 
-7. Now that In a new terminal tab, cd to the project then lando check to start.
+7. In a new terminal tab, cd to the project then `lando check` to start.
 
 Huge props to @AaronFeledy for the love and crating the Lando bits
 
