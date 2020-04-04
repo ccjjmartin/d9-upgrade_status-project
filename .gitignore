@@ -5,3 +5,4 @@ web/
 *.xml
 /.editorconfig
 /.gitattributes
+.lando.yml
