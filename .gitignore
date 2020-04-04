@@ -1,1 +1,4 @@
 /*.csv
+/.editorconfig
+/.gitattributes
+composer.lock
