@@ -55,7 +55,7 @@ git checkout -b $MODULENAME
 
 # Install the module with composer
 chmod u+w web/sites/default/
-php composer require ${col2} --prefer-dist
+composer require ${col2} --prefer-dist
 
 /app/vendor/bin/drush si minimal --site-name=test --db-url=mysql://drupal8:drupal8@database:3306/drupal8 -y
 
@@ -72,7 +72,7 @@ php composer require ${col2} --prefer-dist
 # clean up config
 /app/vendor/bin/drush pm:uninstall $MODULENAME -y
 
-php composer remove ${col2}
+composer remove ${col2}
 
 rm -rf web/modules/contrib/$MODULENAME
 

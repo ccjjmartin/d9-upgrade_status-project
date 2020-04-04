@@ -26,7 +26,6 @@ tooling:
     cmd:
       - 'git checkout master'
       - 'chmod u+w web/sites/default'
-      - '/app/vendor/bin/drush pm:enable upgrade_status -y'
       - '/app/d9upgrade_statuscheckall.sh'
 
   clean:
