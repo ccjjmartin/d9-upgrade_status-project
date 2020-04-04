@@ -20,7 +20,8 @@
         "drupal/core-project-message": "^8.8",
         "drupal/core-recommended": "^8.8",
         "drupal/upgrade_status": "2.x-dev#1ba55ce",
-        "drush/drush": "^10.2"
+        "drush/drush": "^10.2",
+        "phpunit/phpunit": "~6"
     },
     "conflict": {
         "drupal/drupal": "*"
