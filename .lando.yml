@@ -1,0 +1,45 @@
+name: d9-upgrade-status
+
+services:
+  drupal1:
+    type: php:7.2
+    via: cli
+    overrides:
+      ports:
+        - "8888"
+    build:
+      - "cd /app/drupal && COMPOSER_PROCESS_TIMEOUT=600 composer install"
+
+tooling:
+
+  drush:
+    service: drupal1
+    cmd: /app/drupal/vendor/bin/drush
+    
+  serve:
+    service: :instance
+    description: Run D9 Upgrade Status Check against your csv
+    cmd:
+      - "php /app/drupal/web/core/scripts/drupal quick-start minimal --no-interaction --suppress-login"
+    options:
+      instance:
+        default: drupal1
+        describe: Run check in different service
+        alias:
+          - i
+  check:
+    service: :instance
+    description: Run D9 Upgrade Status Check against your csv
+    cmd:
+      - 'cd /app/drupal && /app/drupal/vendor/bin/drush pm:enable upgrade_status -y'
+      - 'cd /app/drupal && export PATH="/app/drupal/vendor/bin:$PATH" && /app/d9upgrade_statuscheckall.sh'
+      
+    options:
+      instance:
+        default: drupal1
+        describe: Run check in different instance
+        alias:
+          - i
+
+excludes:
+  - drupal
