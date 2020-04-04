@@ -1,46 +1,27 @@
 name: d9-upgrade-status
+recipe: drupal8
+config:
+  php: '7.2'
+  via: apache:2.4
+  webroot: drupal/web
+  database: mysql:5.7
+  drush: ^8
+  xdebug: false
 
 services:
-  drupal1:
-    type: php:7.2
-    via: cli
+  appserver:
     build:
       - "cd /app/drupal && chmod u+w web/sites/default"
       - "cd /app/drupal && COMPOSER_PROCESS_TIMEOUT=600 composer install"
       - "cd /app/drupal && chmod u+w web/sites/default"
 
-proxy:
-  drupal1:
-    - myapp.lndo.site:8888
-
-  drupal2:
-    type: php:7.2
-    via: cli
-
-  drupal3:
-    type: php:7.2
-    via: cli
-
+tooling:
   drush:
-    service: drupal1
-    cmd: /app/drupal/vendor/bin/drush
-
-  serve:
-    service: :instance
-    description: Run D9 Upgrade Status Check against your csv
-    cmd:
-      - "chmod u+w drupal/web/sites/default"
-      - "cd drupal/web/ && rm -Rf sites/default/files && rm -f sites/default/settings.php"
-      - "php /app/drupal/web/core/scripts/drupal quick-start minimal --no-interaction --suppress-login"
-    options:
-      instance:
-        default: drupal1
-        describe: Run check in different service
-        alias:
-          - i
+    service: appserver
+    cmd: /app/drupal/vendor/bin/drush --root=/app/drupal/web
 
   check:
-    service: :instance
+    service: appserver
     description: Run D9 Upgrade Status Check against your csv
     cmd:
       - 'git checkout master'
@@ -48,23 +29,9 @@ proxy:
       - '/app/drupal/vendor/bin/drush pm:enable upgrade_status -y'
       - '/app/d9upgrade_statuscheckall.sh'
 
-    options:
-      instance:
-        default: drupal1
-        describe: Run check in different instance
-        alias:
-          - i
-
   clean:
-    service: :instance
+    service: appserver
     description: Run D9 Upgrade Status Check against your csv
     cmd:
       - 'git checkout master; git branch | grep -v "master" | xargs git branch -D'
       - 'git reset --hard HEAD'
-
-    options:
-      instance:
-        default: drupal1
-        describe: Run check in different instance
-        alias:
-          - i
