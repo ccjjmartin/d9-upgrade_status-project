@@ -30,7 +30,7 @@
 
 git checkout master # just make sure.
 
-[ ! -d reports ] && { mkdir reports }
+mkdir -p reports
 
 ## Open the csv of the list of allllllll the modules
 INPUT="${INPUT:-list.csv}"
