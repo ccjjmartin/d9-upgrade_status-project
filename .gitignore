@@ -6,3 +6,4 @@ web/
 /.editorconfig
 /.gitattributes
 .lando.yml
+composer.lock

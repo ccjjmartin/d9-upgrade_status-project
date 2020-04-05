@@ -30,8 +30,6 @@
 
 git checkout master # just make sure.
 
-mkdir reports
-
 ## Open the csv of the list of allllllll the modules
 INPUT=list.csv
 
@@ -74,6 +72,7 @@ composer require ${col2}
 /app/vendor/bin/drush pm:uninstall $MODULENAME -y
 
 composer remove ${col2}
+rm -rf composer.lock
 
 rm -rf web/modules/contrib/$MODULENAME
 
