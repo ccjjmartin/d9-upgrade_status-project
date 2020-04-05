@@ -33,7 +33,7 @@ git checkout master # just make sure.
 mkdir -p ../reports
 
 ## Open the csv of the list of allllllll the modules
-INPUT="${$INPUT:-modulelistmachinenames1.csv}"
+INPUT="${INPUT:-modulelistmachinenames1.csv}"
 
 ##Safe way to deal with Internal File Separator or IFS resets
 OLDIFS=$IFS

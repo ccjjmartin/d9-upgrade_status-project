@@ -15,20 +15,12 @@ Huge props to @AaronFeledy for the love and creating a Lando setup.
 
 You can run this with a little bit of fuss, it is a WIP.    
 
-to use lando, do this:
-
 1. `lando start` to build the environment
 
 1. `lando serve` to start the Drupal server
 
 1. drop the csv into the project's web folder (or modify the script to point where you like)
 
-1. check local permissions to make sure others can write to your 'reports' file
-
-1. time for one more final `git commit -am 'ready to roll'`
-
 1. In a new terminal tab, cd to the project then `lando check` to start.
 
 1. 1. If you plan to run multiple instances, run `lando gimme4` to build 3 additional environments and follow on screen instructions for starting those instances.
-
-
