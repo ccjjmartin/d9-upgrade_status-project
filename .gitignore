@@ -1,6 +1,10 @@
 reports/
 vendor/
 web/
+drupal1/
+drupal2/
+drupal3/
+drupal4/
 /*.csv
 /.editorconfig
 /.gitattributes
