@@ -10,7 +10,7 @@ services:
     build:
       - "mkdir -p /app/reports && chmod 777 /app/reports"
       - "rm -rf /app/drupal1/.git"
-      - "git clone --no-checkout https://github.com/AaronFeledy/d9-upgrade_status-project.git temp"
+      - "git clone --no-checkout https://github.com/mcdwayne/d9-upgrade_status-project.git temp"
       - "mv /app/temp/.git /app/drupal1 && rm -rf temp"
       - "cd drupal1 && git reset --hard HEAD"
       - "cd drupal1 && composer install"
@@ -71,7 +71,7 @@ tooling:
       description: Prepare a total of 4 instances for running the script.
       cmd:
         - "echo Preparing..."
-        - "git clone https://github.com/AaronFeledy/d9-upgrade_status-project.git drupal2"
+        - "git clone https://github.com/mcdwayne/d9-upgrade_status-project.git drupal2"
         - "cd /app/drupal2 && composer install"
         - "cd /app/drupal2 && chmod +rx *.sh"
         - "echo Copying files to drupal3..."
