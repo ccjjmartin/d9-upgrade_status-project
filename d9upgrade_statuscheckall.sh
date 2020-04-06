@@ -79,6 +79,7 @@ git reset --hard
 git add .
 git commit -m '${MODULENAME}'
 git checkout master
+git branch -D ${MODULENAME}
 
 ## Done with the loop
 done < $INPUT
