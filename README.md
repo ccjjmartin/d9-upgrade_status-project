@@ -39,6 +39,7 @@ You can run this with a little bit of fuss, it is a WIP.
 9 $ `git init`
 10 $ `git add .`
 11 $ `git commit -m 'initial state`
+12 $`./d9upgrade_statuscheckall.sh`
 
 If that messes up, sorry
 
