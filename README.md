@@ -24,3 +24,21 @@ You can run this with a little bit of fuss, it is a WIP.
 1. In a new terminal tab, cd to the project then `lando check` to start.
 
 1. 1. If you plan to run multiple instances, run `lando gimme4` to build 3 additional environments and follow on screen instructions for starting those instances.
+
+
+#### Not using Lando
+
+1 Clone down the repo
+2 $ `chmod +x D9-setup-script.sh`
+3 $`./ 	D9-setup-script.sh`
+4 $ `cd YOUR_SITE_NAME`
+5 $ `php ./web/core/scripts/drupal quick-start minimal`
+6 $ `chmod u+w web/sites/default`
+7 copy in a CSV of name `modulemachinename1.csv` into this directory
+8 $ `drush pm:enable upgrade_status -y`
+9 $ `git init`
+10 $ `git add .`
+11 $ `git commit -m 'initial state`
+
+If that messes up, sorry
+
