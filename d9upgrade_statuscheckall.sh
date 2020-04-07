@@ -33,7 +33,7 @@ git checkout master # just make sure.
 mkdir -p ../reports
 
 ## Open the csv of the list of allllllll the modules
-INPUT="${INPUT:-modulelistmachinenames1.csv}"
+INPUT=modulelistmachinenames1.csv
 
 ##Safe way to deal with Internal File Separator or IFS resets
 OLDIFS=$IFS
@@ -53,14 +53,14 @@ MODULENAME=$col1
 echo $MODULENAME
 
 git checkout -b $MODULENAME
-
+chmod u+w web/sites/default
 # Install the module with composer
 composer require ${col2}
 
 # YOU MUST ENABLE THE MODULE TO MAKE upgrade_status:checkstyle work
 drush pm:enable $MODULENAME -y
 
-
+chmod u+w web/sites/default
 ## Push to a .xml file
 drush upgrade_status:checkstyle ${MODULENAME} > ../reports/${MODULENAME}.xml
 
