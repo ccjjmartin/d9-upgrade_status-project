@@ -1,0 +1,3 @@
+<?xml version="1.0"?>
+<checkstyle><file name="modules/contrib/feeds_migrate/tests/src/FunctionalJavascript/Form/MigrationFormTest.php"><error line="16" message="Usage of deprecated trait Drupal\Tests\taxonomy\Functional\TaxonomyTestTrait in class Drupal\Tests\feeds_migrate\FunctionalJavascript\Form\MigrationFormTest. Deprecated in drupal:8.8.0 and is removed from drupal:9.0.0.&#10;Use \Drupal\Tests\taxonomy\Traits\TaxonomyTestTrait instead." severity="warning"/></file></checkstyle>
+

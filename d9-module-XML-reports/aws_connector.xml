@@ -1,0 +1,3 @@
+<?xml version="1.0"?>
+<checkstyle><file name="modules/contrib/aws_connector/src/Credentials/AWSCredentialProvider.php"><error line="14" message="Declaration of Drupal\aws_connector\Credentials\AWSCredentialProvider::ini($profile = 'default', $filename = NULL) should be compatible with Aws\Credentials\CredentialProvider::ini($profile = NULL, $filename = NULL, array $config = Array)" severity="error"/></file><file name="modules/contrib/aws_connector/aws_connector.info.yml"><error line="0" message="Add &lt;code&gt;core_version_requirement: ^8 || ^9&lt;/code&gt; to aws_connector.info.yml to designate that the module is compatible with Drupal 9. See https://www.drupal.org/node/3070687." severity="error"/></file></checkstyle>
+

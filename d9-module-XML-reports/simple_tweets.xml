@@ -1,0 +1,3 @@
+<?xml version="1.0"?>
+<checkstyle><file name="modules/contrib/simple_tweets/src/Form/simpleTweetsSettingsForm.php"><error line="236" message="Call to deprecated function entity_render_cache_clear(). Deprecated in drupal:8.7.0 and is removed from drupal:9.0.0. Instead,&#10;use \Drupal\Core\Entity\EntityViewBuilderInterface::resetCache() on the&#10;required entity types or invalidate specific cache tags." severity="error"/></file><file name="modules/contrib/simple_tweets/simple_tweets.info.yml"><error line="0" message="Add &lt;code&gt;core_version_requirement: ^8 || ^9&lt;/code&gt; to simple_tweets.info.yml to designate that the module is compatible with Drupal 9. See https://www.drupal.org/node/3070687." severity="error"/></file></checkstyle>
+

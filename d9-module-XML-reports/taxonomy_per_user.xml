@@ -1,0 +1,1 @@
+Error: Call to a member function setHandlerClass() on null in taxonomy_per_user_entity_type_alter() (line 22 of /app/web/modules/contrib/taxonomy_per_user/taxonomy_per_user.module).

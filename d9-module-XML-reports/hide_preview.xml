@@ -1,0 +1,3 @@
+<?xml version="1.0"?>
+<checkstyle><file name="modules/contrib/hide_preview/src/tests/src/Unit/HidePreviewTest.php"><error line="" message="Class Drupal\Tests\phpunit_example\Unit\HidePreviewTest was not found while trying to analyse it - autoloading is probably not configured properly." severity="error"/></file></checkstyle>
+

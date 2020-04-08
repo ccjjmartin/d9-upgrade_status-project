@@ -1,0 +1,2 @@
+source   : [git] https://git.drupalcode.org/project/advancedqueue.git 8.x-1.0-rc1
+source : https://git.drupalcode.org/project/advancedqueue

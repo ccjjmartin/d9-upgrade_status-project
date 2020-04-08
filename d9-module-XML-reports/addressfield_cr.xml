@@ -1,0 +1,5 @@
+<?xml version="1.0"?>
+<checkstyle><file name="modules/contrib/addressfield_cr/vendor/composer/autoload_real.php"><error line="" message="Class ComposerAutoloaderInit1d1a2e4fbb37e314178eceeb2536bbbe was not found while trying to analyse it - autoloading is probably not configured properly." severity="error"/></file><file name="modules/contrib/addressfield_cr/vendor/composer/autoload_static.php"><error line="" message="Class Composer\Autoload\ComposerStaticInit1d1a2e4fbb37e314178eceeb2536bbbe was not found while trying to analyse it - autoloading is probably not configured properly." severity="error"/></file><file name="modules/contrib/addressfield_cr/addressfield_cr.info.yml"><error line="0" message="Add &lt;code&gt;core_version_requirement: ^8 || ^9&lt;/code&gt; to addressfield_cr.info.yml to designate that the module is compatible with Drupal 9. See https://www.drupal.org/node/3070687." severity="error"/></file></checkstyle>
+
+source   : [git] https://git.drupalcode.org/project/addressfield_cr.git b375c58db1b6b2f6a9c8f60367e4f8f2f44a9c36
+source : http://cgit.drupalcode.org/addressfield_cr

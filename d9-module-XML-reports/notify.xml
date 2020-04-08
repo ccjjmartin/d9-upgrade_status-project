@@ -1,0 +1,3 @@
+<?xml version="1.0"?>
+<checkstyle><file name="modules/contrib/notify/notify.module"><error line="489" message="Call to deprecated function node_view(). Deprecated in drupal:8.7.0 and is removed from drupal:9.0.0.&#10;Use \Drupal::entityTypeManager()-&gt;getViewBuilder('node')-&gt;view() instead." severity="error"/><error line="521" message="Call to deprecated function node_view(). Deprecated in drupal:8.7.0 and is removed from drupal:9.0.0.&#10;Use \Drupal::entityTypeManager()-&gt;getViewBuilder('node')-&gt;view() instead." severity="error"/></file></checkstyle>
+

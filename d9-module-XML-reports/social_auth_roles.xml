@@ -1,0 +1,3 @@
+<?xml version="1.0"?>
+<checkstyle><file name="modules/contrib/social_auth_roles/src/Form/SocialAuthRolesSettingsForm.php"><error line="" message="Class Drupal\social_auth_roles\Form\socialAuthRolesSettingsForm was not found while trying to analyse it - autoloading is probably not configured properly." severity="error"/></file><file name="modules/contrib/social_auth_roles/social_auth_roles.info.yml"><error line="0" message="Add &lt;code&gt;core_version_requirement: ^8 || ^9&lt;/code&gt; to social_auth_roles.info.yml to designate that the module is compatible with Drupal 9. See https://www.drupal.org/node/3070687." severity="error"/></file></checkstyle>
+

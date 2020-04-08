@@ -1,0 +1,5 @@
+<?xml version="1.0"?>
+<checkstyle><file name="modules/contrib/advanced_forum/advanced_forum.info.yml"><error line="0" message="Add &lt;code&gt;core_version_requirement: ^8 || ^9&lt;/code&gt; to advanced_forum.info.yml to designate that the module is compatible with Drupal 9. See https://www.drupal.org/node/3070687." severity="error"/></file></checkstyle>
+
+source   : [git] https://git.drupalcode.org/project/advanced_forum.git 391545d1bb014c7b07ff451142f174b945b400b0
+source : https://git.drupalcode.org/project/advanced_forum

@@ -1,0 +1,5 @@
+<?xml version="1.0"?>
+<checkstyle><file name="modules/contrib/add_to_head/add_to_head.info.yml"><error line="0" message="Add &lt;code&gt;core_version_requirement: ^8 || ^9&lt;/code&gt; to add_to_head.info.yml to designate that the module is compatible with Drupal 9. See https://www.drupal.org/node/3070687." severity="error"/></file></checkstyle>
+
+source   : [git] https://git.drupalcode.org/project/add_to_head.git 39f8613be397955708ab87c6b5348b876db66154
+source : https://git.drupalcode.org/project/add_to_head

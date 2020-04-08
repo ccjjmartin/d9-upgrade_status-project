@@ -1,0 +1,3 @@
+<?xml version="1.0"?>
+<checkstyle><file name="modules/contrib/block_exclude_pages/block_exclude_pages.module"><error line="85" message="Calls to function fnmatch should not exist." severity="error"/><error line="85" message="Calls to function fnmatch should not exist." severity="error"/></file><file name="modules/contrib/block_exclude_pages/block_exclude_pages.info.yml"><error line="0" message="Add &lt;code&gt;core_version_requirement: ^8 || ^9&lt;/code&gt; to block_exclude_pages.info.yml to designate that the module is compatible with Drupal 9. See https://www.drupal.org/node/3070687." severity="error"/></file></checkstyle>
+

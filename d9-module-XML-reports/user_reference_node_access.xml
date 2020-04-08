@@ -1,0 +1,3 @@
+<?xml version="1.0"?>
+<checkstyle><file name="modules/contrib/user_reference_node_access/src/form/UserReferenceNodeAccessConfigurationForm.php"><error line="" message="Class Drupal\user_reference_node_access\Form\UserReferenceNodeAccessConfigurationForm was not found while trying to analyse it - autoloading is probably not configured properly." severity="error"/></file><file name="modules/contrib/user_reference_node_access/user_reference_node_access.info.yml"><error line="0" message="Add &lt;code&gt;core_version_requirement: ^8 || ^9&lt;/code&gt; to user_reference_node_access.info.yml to designate that the module is compatible with Drupal 9. See https://www.drupal.org/node/3070687." severity="error"/></file></checkstyle>
+

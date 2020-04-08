@@ -1,0 +1,3 @@
+<?xml version="1.0"?>
+<checkstyle><file name="modules/contrib/dev_roles_users/src/Controller/DevRolesUsersController.php"><error line="29" message="Call to deprecated constant DRUPAL_AUTHENTICATED_RID: Deprecated in drupal:8.0.0 and is removed from drupal:9.0.0. Use Drupal\Core\Session\AccountInterface::AUTHENTICATED_ROLE or \Drupal\user\RoleInterface::AUTHENTICATED_ID instead." severity="error"/></file><file name="modules/contrib/dev_roles_users/dev_roles_users.info.yml"><error line="0" message="Add &lt;code&gt;core_version_requirement: ^8 || ^9&lt;/code&gt; to dev_roles_users.info.yml to designate that the module is compatible with Drupal 9. See https://www.drupal.org/node/3070687." severity="error"/></file></checkstyle>
+

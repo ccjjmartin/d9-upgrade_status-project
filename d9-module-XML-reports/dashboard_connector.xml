@@ -1,0 +1,3 @@
+<?xml version="1.0"?>
+<checkstyle><file name="modules/contrib/dashboard_connector/dashboard_connector.drush.inc"><error line="30" message="Call to deprecated function drush_log()." severity="error"/><error line="33" message="Call to deprecated function drush_log()." severity="error"/></file></checkstyle>
+

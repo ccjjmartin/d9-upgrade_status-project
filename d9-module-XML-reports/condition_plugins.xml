@@ -1,0 +1,3 @@
+<?xml version="1.0"?>
+<checkstyle><file name="modules/contrib/condition_plugins/src/PrivateTempStoreFactory.php"><error line="10" message="Class Drupal\condition_plugins\PrivateTempStoreFactory extends deprecated class Drupal\user\PrivateTempStoreFactory. Deprecated in drupal:8.5.0 and is removed from drupal:9.0.0.&#10;Use \Drupal\Core\TempStore\PrivateTempStoreFactory instead." severity="error"/></file><file name="modules/contrib/condition_plugins/condition_plugins.info.yml"><error line="0" message="Add &lt;code&gt;core_version_requirement: ^8 || ^9&lt;/code&gt; to condition_plugins.info.yml to designate that the module is compatible with Drupal 9. See https://www.drupal.org/node/3070687." severity="error"/></file></checkstyle>
+

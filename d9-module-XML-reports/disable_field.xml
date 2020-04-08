@@ -1,0 +1,3 @@
+<?xml version="1.0"?>
+<checkstyle><file name="modules/contrib/disable_field/tests/src/Functional/DisableFieldTest.php"><error line="15" message="Class Drupal\Tests\paragraphs\FunctionalJavascript\ParagraphsTestBaseTrait not found and could not be autoloaded." severity="error"/></file></checkstyle>
+

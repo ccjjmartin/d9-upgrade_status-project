@@ -1,0 +1,1 @@
+Error: Class &#039;Drupal\upgrade_status\Commands\InvalidArgumentException&#039; not found in Drupal\upgrade_status\Commands\UpgradeStatusCommands->analyze() (line 144 of /home/thatoneguyinchicago/Documents/d7/web/modules/contrib/upgrade_status/src/Commands/UpgradeStatusCommands.php).

@@ -1,0 +1,3 @@
+<?xml version="1.0"?>
+<checkstyle><file name="modules/contrib/taxonomy_container/tests/src/Unit/TermSelectionTest.php"><error line="" message="Class PHPUnit\Framework\TestCase not found and could not be autoloaded." severity="error"/><error line="26" message="Class PHPUnit\Framework\TestCase not found and could not be autoloaded." severity="error"/></file></checkstyle>
+

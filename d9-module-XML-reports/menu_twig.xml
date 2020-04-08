@@ -1,0 +1,3 @@
+<?xml version="1.0"?>
+<checkstyle><file name="modules/contrib/menu_twig/src/Twig/MenuTwigExtension.php"><error line="21" message="Instantiation of deprecated class Twig_Function_Function:&#10;since 1.12 (to be removed in 2.0)" severity="error"/></file><file name=""><error line="0" message="Using an instance of &quot;Twig_Function_Function&quot; for function &quot;link&quot; is deprecated since version 1.21. Use \Twig_SimpleFunction instead." severity="error"/></file><file name="modules/contrib/menu_twig/menu_twig.info.yml"><error line="0" message="Add &lt;code&gt;core_version_requirement: ^8 || ^9&lt;/code&gt; to menu_twig.info.yml to designate that the module is compatible with Drupal 9. See https://www.drupal.org/node/3070687." severity="error"/></file></checkstyle>
+

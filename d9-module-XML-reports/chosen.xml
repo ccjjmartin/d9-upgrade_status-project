@@ -1,0 +1,3 @@
+<?xml version="1.0"?>
+<checkstyle><file name="modules/contrib/chosen/src/ChosenFormRender.php"><error line="" message="Class Drupal\chosen\TrustedCallbackInterface was not found while trying to analyse it - autoloading is probably not configured properly." severity="error"/></file></checkstyle>
+

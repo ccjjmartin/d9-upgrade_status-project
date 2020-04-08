@@ -1,0 +1,3 @@
+<?xml version="1.0"?>
+<checkstyle><file name="modules/contrib/bridtv/src/Plugin/MediaEntity/Type/Bridtv.php"><error line="" message="Class Drupal\media_entity\MediaTypeBase not found and could not be autoloaded." severity="error"/><error line="21" message="Class Drupal\media_entity\MediaTypeBase not found and could not be autoloaded." severity="error"/></file><file name="modules/contrib/bridtv/src/Plugin/Validation/Constraint/BridtvValidReferenceConstraintValidator.php"><error line="" message="Class Drupal\Core\Entity\Plugin\Validation\Constraint\BridtvValidReferenceConstraintValidator was not found while trying to analyse it - autoloading is probably not configured properly." severity="error"/></file></checkstyle>
+

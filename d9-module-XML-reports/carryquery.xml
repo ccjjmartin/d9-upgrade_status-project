@@ -1,0 +1,3 @@
+<?xml version="1.0"?>
+<checkstyle><file name="modules/contrib/carryquery/tests/src/Unit/CarryQueryPathProcessorTest.php"><error line="" message="Class Drupal\tests\carryquery\Unit\CarryQueryPathProcessorTest was not found while trying to analyse it - autoloading is probably not configured properly." severity="error"/></file></checkstyle>
+

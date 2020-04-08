@@ -1,0 +1,3 @@
+<?xml version="1.0"?>
+<checkstyle><file name="modules/contrib/views_sort_options_weight/src/Plugin/views/sort/ExtendedSortByUserRoleWeight.php"><error line="55" message="&quot;continue&quot; targeting switch is equivalent to &quot;break&quot;. Did you mean to use &quot;continue 2&quot;?" severity="error"/></file><file name="modules/contrib/views_sort_options_weight/views_sort_options_weight.info.yml"><error line="0" message="Add &lt;code&gt;core_version_requirement: ^8 || ^9&lt;/code&gt; to views_sort_options_weight.info.yml to designate that the module is compatible with Drupal 9. See https://www.drupal.org/node/3070687." severity="error"/></file></checkstyle>
+

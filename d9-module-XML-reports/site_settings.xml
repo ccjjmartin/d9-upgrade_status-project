@@ -1,0 +1,3 @@
+<?xml version="1.0"?>
+<checkstyle><file name="modules/contrib/site_settings/src/Entity/SiteSettingEntity.php"><error line="178" message="Call to deprecated constant NODE_NOT_PUBLISHED: Deprecated in drupal:8.?.? and is removed from drupal:9.0.0. Use \Drupal\node\NodeInterface::NOT_PUBLISHED instead." severity="error"/><error line="178" message="Call to deprecated constant NODE_PUBLISHED: Deprecated in drupal:8.?.? and is removed from drupal:9.0.0. Use \Drupal\node\NodeInterface::PUBLISHED instead." severity="error"/></file></checkstyle>
+

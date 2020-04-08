@@ -1,0 +1,3 @@
+<?xml version="1.0"?>
+<checkstyle><file name="modules/contrib/inline_entity_form/tests/src/FunctionalJavascript/ComplexWidgetRevisionsTest.php"><error line="" message="Class Drupal\inline_entity_form\Tests\ComplexWidgetRevisionsTest was not found while trying to analyse it - autoloading is probably not configured properly." severity="error"/></file></checkstyle>
+

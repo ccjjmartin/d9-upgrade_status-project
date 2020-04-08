@@ -1,0 +1,2 @@
+
+Fatal error: Class Drupal\steam_vent\Entity\SteamMessage contains 2 abstract methods and must therefore be declared abstract or implement the remaining methods (Drupal\courier\ChannelInterface::importTemplate, Drupal\courier\ChannelInterface::exportTemplate) in /app/web/modules/contrib/steam_vent/src/Entity/SteamMessage.php on line 40

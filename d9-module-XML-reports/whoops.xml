@@ -1,0 +1,3 @@
+<?xml version="1.0"?>
+<checkstyle><file name="modules/contrib/whoops/tests/src/Functional/WhoopsTest.php"><error line="78" message="Call to deprecated method setExpectedException() of class Drupal\Tests\BrowserTestBase. Deprecated in drupal:8.8.0 and is removed from drupal:9.0.0.&#10;Backward compatibility for PHPUnit 4 will no longer be supported." severity="warning"/></file><file name="modules/contrib/whoops/whoops.info.yml"><error line="0" message="Add &lt;code&gt;core_version_requirement: ^8 || ^9&lt;/code&gt; to whoops.info.yml to designate that the module is compatible with Drupal 9. See https://www.drupal.org/node/3070687." severity="error"/></file></checkstyle>
+

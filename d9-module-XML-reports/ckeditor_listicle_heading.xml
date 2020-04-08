@@ -1,0 +1,1 @@
+Error: Class &#039;Drupal\libraries\StreamWrapper\LibraryDefinitionsStream&#039; not found in Drupal\Core\StreamWrapper\StreamWrapperManager->addStreamWrapper() (line 154 of /app/web/core/lib/Drupal/Core/StreamWrapper/StreamWrapperManager.php).

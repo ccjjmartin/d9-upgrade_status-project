@@ -1,0 +1,3 @@
+<?xml version="1.0"?>
+<checkstyle><file name="modules/contrib/image_slider/src/Plugin/Derivative/SliderBlock.php"><error line="21" message="Call to deprecated function db_select(). Deprecated in drupal:8.0.0 and is removed from drupal:9.0.0. Instead, get&#10;a database connection injected into your service from the container and&#10;call select() on it. For example," severity="error"/></file></checkstyle>
+

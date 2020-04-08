@@ -1,0 +1,1 @@
+Error: Undefined class constant &#039;MYSQL_ATTR_INIT_COMMAND&#039; in Drupal\lcache\BackendFactory->getPdoHandle() (line 25 of /home/thatoneguyinchicago/Documents/d1/web/modules/contrib/lcache/src/BackendFactory.php).

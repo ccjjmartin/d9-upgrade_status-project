@@ -1,0 +1,3 @@
+<?xml version="1.0"?>
+<checkstyle><file name="modules/contrib/communico/tests/src/Unit/Test.php"><error line="" message="Class Drupal\Tests\communico\Unit\IfCommunicoTest was not found while trying to analyse it - autoloading is probably not configured properly." severity="error"/></file><file name="modules/contrib/communico/communico.info.yml"><error line="0" message="Add &lt;code&gt;core_version_requirement: ^8 || ^9&lt;/code&gt; to communico.info.yml to designate that the module is compatible with Drupal 9. See https://www.drupal.org/node/3070687." severity="error"/></file></checkstyle>
+

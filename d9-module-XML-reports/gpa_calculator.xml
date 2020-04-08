@@ -1,0 +1,3 @@
+<?xml version="1.0"?>
+<checkstyle><file name="modules/contrib/gpa_calculator/src/Form/GpaCalculatorForm.php"><error line="46" message="Call to deprecated method l() of class Drupal. Deprecated in drupal:8.0.0 and is removed from drupal:9.0.0. Use&#10;\Drupal\Core\Link::fromTextAndUrl() instead." severity="error"/></file><file name="modules/contrib/gpa_calculator/gpa_calculator.info.yml"><error line="0" message="Add &lt;code&gt;core_version_requirement: ^8 || ^9&lt;/code&gt; to gpa_calculator.info.yml to designate that the module is compatible with Drupal 9. See https://www.drupal.org/node/3070687." severity="error"/></file></checkstyle>
+

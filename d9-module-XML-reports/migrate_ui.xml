@@ -1,0 +1,1 @@
+Error: Call to a member function setListBuilderClass() on null in migrate_ui_entity_type_alter() (line 14 of /app/web/modules/contrib/migrate_ui/migrate_ui.module).

@@ -1,0 +1,1 @@
+TypeError: array_filter() expects parameter 1 to be array, null given in array_filter() (line 119 of /app/web/modules/contrib/upgrade_status/src/LibraryDeprecationAnalyzer.php).

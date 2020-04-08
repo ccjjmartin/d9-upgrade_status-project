@@ -1,0 +1,3 @@
+<?xml version="1.0"?>
+<checkstyle><file name="modules/contrib/buymeabeer/buymeabeer.module"><error line="38" message="Call to deprecated method url() of class Drupal. Deprecated in drupal:8.0.0 and is removed from drupal:9.0.0.&#10;Instead create a \Drupal\Core\Url object directly, for example using&#10;Url::fromRoute()." severity="error"/></file><file name="modules/contrib/buymeabeer/buymeabeer.info.yml"><error line="0" message="Add &lt;code&gt;core_version_requirement: ^8 || ^9&lt;/code&gt; to buymeabeer.info.yml to designate that the module is compatible with Drupal 9. See https://www.drupal.org/node/3070687." severity="error"/></file></checkstyle>
+

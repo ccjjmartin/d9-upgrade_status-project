@@ -1,0 +1,1 @@
+Error: Call to undefined method Symfony\Component\DependencyInjection\Reference::isStrict() in Drupal\webprofiler\Compiler\ServicePass->extractData() (line 58 of /app/web/modules/contrib/webprofiler/src/Compiler/ServicePass.php).

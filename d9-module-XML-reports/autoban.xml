@@ -1,0 +1,3 @@
+<?xml version="1.0"?>
+<checkstyle><file name="modules/contrib/autoban/src/Form/AutobanFormBase.php"><error line="68" message="Parameter $query_factory of method Drupal\autoban\Form\AutobanFormBase::__construct() has typehint with deprecated class Drupal\Core\Entity\Query\QueryFactory. Deprecated in drupal:8.3.0 and is removed from drupal:9.0.0. Use&#10;\Drupal\Core\Entity\EntityStorageInterface::getQuery() or&#10;\Drupal\Core\Entity\EntityStorageInterface::getAggregateQuery() instead." severity="error"/></file></checkstyle>
+

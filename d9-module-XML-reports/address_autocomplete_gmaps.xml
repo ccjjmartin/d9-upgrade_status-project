@@ -1,0 +1,5 @@
+<?xml version="1.0"?>
+<checkstyle><file name="modules/contrib/address_autocomplete_gmaps/address_autocomplete_gmaps.info.yml"><error line="0" message="Add &lt;code&gt;core_version_requirement: ^8 || ^9&lt;/code&gt; to address_autocomplete_gmaps.info.yml to designate that the module is compatible with Drupal 9. See https://www.drupal.org/node/3070687." severity="error"/></file></checkstyle>
+
+source   : [git] https://git.drupalcode.org/project/address_autocomplete_gmaps.git 352ce11834a883da4ca18625dc7fde14d690dd13
+source : https://git.drupalcode.org/project/address_autocomplete_gmaps

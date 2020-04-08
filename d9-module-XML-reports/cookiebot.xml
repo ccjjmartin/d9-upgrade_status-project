@@ -1,0 +1,3 @@
+<?xml version="1.0"?>
+<checkstyle><file name="modules/contrib/cookiebot/src/Form/CookiebotForm.php"><error line="51" message="Parameter $alias_manager of method Drupal\cookiebot\Form\CookiebotForm::__construct() has typehint with deprecated class Drupal\Core\Path\AliasManager. Deprecated in drupal:8.8.0 and is removed from drupal:9.0.0. Use&#10;\Drupal\path_alias\AliasManager instead." severity="warning"/></file></checkstyle>
+

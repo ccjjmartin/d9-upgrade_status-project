@@ -1,0 +1,3 @@
+<?xml version="1.0"?>
+<checkstyle><file name="modules/contrib/ccos/ccos.drush8.inc"><error line="87" message="Call to deprecated function drush_log()." severity="error"/></file></checkstyle>
+

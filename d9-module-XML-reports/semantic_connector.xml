@@ -1,0 +1,3 @@
+<?xml version="1.0"?>
+<checkstyle><file name="modules/contrib/semantic_connector/src/ConnectionListBuilder.php"><error line="12" message="Declaration of Drupal\semantic_connector\ConnectionListBuilder::buildRow(Drupal\semantic_connector\Entity\SemanticConnectorConnectionInterface $entity) should be compatible with Drupal\Core\Entity\EntityListBuilder::buildRow(Drupal\Core\Entity\EntityInterface $entity)" severity="error"/></file><file name="modules/contrib/semantic_connector/semantic_connector.info.yml"><error line="0" message="Add &lt;code&gt;core_version_requirement: ^8 || ^9&lt;/code&gt; to semantic_connector.info.yml to designate that the module is compatible with Drupal 9. See https://www.drupal.org/node/3070687." severity="error"/></file></checkstyle>
+

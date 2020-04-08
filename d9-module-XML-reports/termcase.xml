@@ -1,0 +1,1 @@
+Error: Call to a member function setListBuilderClass() on null in termcase_entity_type_alter() (line 231 of /app/web/modules/contrib/termcase/termcase.module).

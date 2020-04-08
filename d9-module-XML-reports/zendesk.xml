@@ -1,0 +1,2 @@
+
+Fatal error: require(): Failed opening required 'vendor/autoload.php' (include_path='/app/vendor/pear/archive_tar:/app/vendor/pear/console_getopt:/app/vendor/pear/pear-core-minimal/src:/app/vendor/pear/pear_exception:.:/usr/local/lib/php') in /app/web/modules/contrib/zendesk/zendesk.module on line 8

@@ -1,0 +1,3 @@
+<?xml version="1.0"?>
+<checkstyle><file name="modules/contrib/attachinline/src/EventSubscriber/CspSubscriber.php"><error line="76" message="Call to deprecated method randomBytes() of class Drupal\Component\Utility\Crypt. Deprecated in drupal:8.8.0 and is removed from drupal:9.0.0.&#10;Use PHP's built-in random_bytes() function instead." severity="warning"/></file></checkstyle>
+

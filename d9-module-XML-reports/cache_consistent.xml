@@ -1,0 +1,1 @@
+Error: Class &#039;Drupal\Core\Database\DatabaseEvents&#039; not found in Drupal\transactionalphp\TransactionalPhp::getSubscribedEvents() (line 108 of /home/thatoneguyinchicago/Documents/drupal8-check/web/modules/contrib/transactionalphp/src/TransactionSubscriberTrait.php).

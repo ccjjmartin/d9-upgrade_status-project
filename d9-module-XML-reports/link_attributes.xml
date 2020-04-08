@@ -1,0 +1,3 @@
+<?xml version="1.0"?>
+<checkstyle><file name="modules/contrib/link_attributes/src/LinkAttributesManager.php"><error line="15" message="Drupal\link_attributes\LinkAttributesManager must override __construct if using YAML plugins." severity="error"/></file></checkstyle>
+

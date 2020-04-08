@@ -1,0 +1,5 @@
+<?xml version="1.0"?>
+<checkstyle><file name="modules/contrib/address_formatter/src/Controller/AddressFormatterOptionsController.php"><error line="28" message="Call to deprecated method url() of class Drupal\Core\Config\Entity\ConfigEntityBase. Deprecated in drupal:8.0.0 and is removed from drupal:9.0.0.&#10;Please use toUrl() instead." severity="error"/><error line="45" message="Call to deprecated method url() of class Drupal\Core\Config\Entity\ConfigEntityBase. Deprecated in drupal:8.0.0 and is removed from drupal:9.0.0.&#10;Please use toUrl() instead." severity="error"/></file><file name="modules/contrib/address_formatter/address_formatter.info.yml"><error line="0" message="Add &lt;code&gt;core_version_requirement: ^8 || ^9&lt;/code&gt; to address_formatter.info.yml to designate that the module is compatible with Drupal 9. See https://www.drupal.org/node/3070687." severity="error"/></file></checkstyle>
+
+source   : [git] https://git.drupalcode.org/project/address_formatter.git 8.x-2.0-alpha4
+source : https://git.drupalcode.org/project/address_formatter

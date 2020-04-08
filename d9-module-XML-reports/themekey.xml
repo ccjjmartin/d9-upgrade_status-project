@@ -1,0 +1,2 @@
+
+Fatal error: Cannot use Drupal\Component\Utility\String as String because 'String' is a special class name in /app/web/modules/contrib/themekey/src/Entity/ThemeKeyRule.php on line 12

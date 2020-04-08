@@ -1,0 +1,3 @@
+<?xml version="1.0"?>
+<checkstyle><file name="modules/contrib/views_linkarea/tests/src/Kernel/Plugin/LinkTest.php"><error line="" message="Class Drupal\Tests\views_linkarea\Kernel\Plugin\LinkAreaTest was not found while trying to analyse it - autoloading is probably not configured properly." severity="error"/></file><file name="modules/contrib/views_linkarea/views_linkarea.info.yml"><error line="0" message="Add &lt;code&gt;core_version_requirement: ^8 || ^9&lt;/code&gt; to views_linkarea.info.yml to designate that the module is compatible with Drupal 9. See https://www.drupal.org/node/3070687." severity="error"/></file></checkstyle>
+

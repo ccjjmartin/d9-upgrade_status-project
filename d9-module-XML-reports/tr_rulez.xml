@@ -1,0 +1,3 @@
+<?xml version="1.0"?>
+<checkstyle><file name="modules/contrib/tr_rulez/rules_scheduler/rules_scheduler.drush.inc"><error line="104" message="Call to deprecated function drush_log()." severity="error"/></file><file name="modules/contrib/tr_rulez/tr_rulez.info.yml"><error line="0" message="The current value  &lt;code&gt;core_version_requirement: ^8.7.7&lt;/code&gt; in tr_rulez.info.yml is not compatible with Drupal 9.0.0. See https://www.drupal.org/node/3070687." severity="error"/></file></checkstyle>
+

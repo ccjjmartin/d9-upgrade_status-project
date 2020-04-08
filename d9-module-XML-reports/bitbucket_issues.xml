@@ -1,0 +1,3 @@
+<?xml version="1.0"?>
+<checkstyle><file name="modules/contrib/bitbucket_issues/src/Plugin/GitIssues/Bitbucket.php"><error line="" message="Class Drupal\git_issues\Plugin\GitIssues\GitIssuesBase not found and could not be autoloaded." severity="error"/><error line="19" message="Class Drupal\git_issues\Plugin\GitIssues\GitIssuesBase not found and could not be autoloaded." severity="error"/></file><file name="modules/contrib/bitbucket_issues/bitbucket_issues.info.yml"><error line="0" message="Add &lt;code&gt;core_version_requirement: ^8 || ^9&lt;/code&gt; to bitbucket_issues.info.yml to designate that the module is compatible with Drupal 9. See https://www.drupal.org/node/3070687." severity="error"/></file></checkstyle>
+

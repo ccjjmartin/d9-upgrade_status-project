@@ -1,0 +1,5 @@
+<?xml version="1.0"?>
+<checkstyle/>
+
+source   : [git] https://git.drupalcode.org/project/acquia_connector.git 8.x-1.21
+source : https://git.drupalcode.org/project/acquia_connector

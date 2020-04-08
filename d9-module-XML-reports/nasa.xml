@@ -1,0 +1,5 @@
+<?xml version="1.0"?>
+<checkstyle><file name="modules/contrib/nasa/src/Controller/NasaController.php"><error line="" message="Class Drupal\nasa\Controller\nasaController was not found while trying to analyse it - autoloading is probably not configured properly." severity="error"/></file><file name="modules/contrib/nasa/src/Plugin/Block/NasaApodBlock.php"><error line="" message="Class Drupal\nasa\Plugin\Block\nasaApodBlock was not found while trying to analyse it - autoloading is probably not configured properly." severity="error"/></file></checkstyle>
+
+source   : [git] https://git.drupalcode.org/project/nasa.git b29eeeb59552e579258ad11218844457670389c1
+source : https://git.drupalcode.org/project/nasa

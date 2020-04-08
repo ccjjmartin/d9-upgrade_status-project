@@ -1,0 +1,2 @@
+source   : [git] https://git.drupalcode.org/project/advpoll.git 0edf0ea5323204df8511005811277d322840a64c
+source : http://cgit.drupalcode.org/advpoll

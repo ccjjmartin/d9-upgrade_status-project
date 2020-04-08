@@ -1,0 +1,3 @@
+<?xml version="1.0"?>
+<checkstyle><file name="modules/contrib/search_api_glossary/src/Plugin/facets/processor/GlossaryAZAllItemsProcessor.php"><error line="49" message="Call to deprecated function pager_get_query_parameters(). Deprecated in drupal:8.8.0 and is removed from drupal:9.0.0. Use&#10;\Drupal\Core\Pager\RequestPagerInterface-&gt;getQueryParameters() instead." severity="warning"/></file><file name="modules/contrib/search_api_glossary/search_api_glossary.info.yml"><error line="0" message="Add &lt;code&gt;core_version_requirement: ^8 || ^9&lt;/code&gt; to search_api_glossary.info.yml to designate that the module is compatible with Drupal 9. See https://www.drupal.org/node/3070687." severity="error"/></file></checkstyle>
+

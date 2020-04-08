@@ -1,0 +1,3 @@
+<?xml version="1.0"?>
+<checkstyle><file name="modules/contrib/calendar_systems/calendar_systems_bef/calendar_systems_bef.module"><error line="7" message="Class Drupal\better_exposed_filters\Plugin\views\exposed_form\BetterExposedFilters not found and could not be autoloaded." severity="error"/></file><file name="modules/contrib/calendar_systems/calendar_systems_bef/src/Plugin/views/exposed_form/CalendarSystemsBef.php"><error line="" message="Class Drupal\better_exposed_filters\Plugin\views\exposed_form\BetterExposedFilters not found and could not be autoloaded." severity="error"/><error line="11" message="Class Drupal\better_exposed_filters\Plugin\views\exposed_form\BetterExposedFilters not found and could not be autoloaded." severity="error"/></file></checkstyle>
+

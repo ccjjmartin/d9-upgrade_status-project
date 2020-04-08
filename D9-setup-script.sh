@@ -40,7 +40,7 @@ else
 	SITENAME=$1
 fi
 
-
+mkdir reports
 ## Composer install the site
 composer create-project drupal/recommended-project ${SITENAME}
 

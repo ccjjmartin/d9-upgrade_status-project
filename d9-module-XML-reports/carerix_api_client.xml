@@ -1,0 +1,3 @@
+<?xml version="1.0"?>
+<checkstyle><file name="modules/contrib/carerix_api_client/carerix_api_client.module"><error line="40" message="Call to deprecated function libraries_load():&#10;Will be removed before a stable Drupal 8 release. Please use the&#10;new library load and managment concepts described at:&#10;https://www.drupal.org/node/2170763" severity="error"/></file><file name="modules/contrib/carerix_api_client/carerix_api_client.info.yml"><error line="0" message="Add &lt;code&gt;core_version_requirement: ^8 || ^9&lt;/code&gt; to carerix_api_client.info.yml to designate that the module is compatible with Drupal 9. See https://www.drupal.org/node/3070687." severity="error"/></file></checkstyle>
+

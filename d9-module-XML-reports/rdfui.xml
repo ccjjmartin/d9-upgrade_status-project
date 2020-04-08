@@ -1,0 +1,3 @@
+<?xml version="1.0"?>
+<checkstyle><file name="modules/contrib/rdfui/rdfui.libraries.yml"><error line="0" message="The 'drupal.rdfui.autocomplete' library is depending on a deprecated library. The &quot;core/jquery.ui.tooltip&quot; asset library is deprecated in drupal:8.8.0 and is removed from drupal:9.0.0. See https://www.drupal.org/node/3067969" severity="error"/></file><file name="modules/contrib/rdfui/rdfui.info.yml"><error line="0" message="Add &lt;code&gt;core_version_requirement: ^8 || ^9&lt;/code&gt; to rdfui.info.yml to designate that the module is compatible with Drupal 9. See https://www.drupal.org/node/3070687." severity="error"/></file></checkstyle>
+

@@ -1,0 +1,1 @@
+TypeError: explode() expects parameter 2 to be string, array given in explode() (line 335 of /home/thatoneguyinchicago/Documents/my_site_name_dir/web/modules/contrib/upgrade_status/src/LibraryDeprecationAnalyzer.php).

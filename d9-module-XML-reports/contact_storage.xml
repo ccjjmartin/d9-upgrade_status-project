@@ -1,0 +1,3 @@
+<?xml version="1.0"?>
+<checkstyle><file name="modules/contrib/contact_storage/tests/src/Functional/ContactViewBuilderTest.php"><error line="95" message="Call to deprecated function entity_get_form_display(). Deprecated in drupal:8.8.0 and is removed from drupal:9.0.0. Use&#10;EntityDisplayRepositoryInterface::getFormDisplay() instead." severity="warning"/><error line="105" message="Call to deprecated function entity_get_display(). Deprecated in drupal:8.8.0 and is removed from drupal:9.0.0. Use&#10;EntityDisplayRepositoryInterface::getViewDisplay() instead." severity="warning"/></file></checkstyle>
+

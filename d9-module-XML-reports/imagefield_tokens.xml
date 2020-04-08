@@ -1,0 +1,3 @@
+<?xml version="1.0"?>
+<checkstyle><file name="modules/contrib/imagefield_tokens/src/Plugin/Field/FieldWidget/ImageFieldTokensCropWidget.php"><error line="" message="Class Drupal\image_widget_crop\Plugin\Field\FieldWidget\ImageCropWidget not found and could not be autoloaded." severity="error"/><error line="21" message="Class Drupal\image_widget_crop\Plugin\Field\FieldWidget\ImageCropWidget not found and could not be autoloaded." severity="error"/></file></checkstyle>
+

@@ -1,0 +1,3 @@
+<?xml version="1.0"?>
+<checkstyle><file name="modules/contrib/tikkie/src/Plugin/WebformHandler/WebformTikkieHandler.php"><error line="" message="Class Drupal\webform\Plugin\WebformHandlerBase not found and could not be autoloaded." severity="error"/><error line="31" message="Class Drupal\webform\Plugin\WebformHandlerBase not found and could not be autoloaded." severity="error"/></file><file name="modules/contrib/tikkie/tikkie.info.yml"><error line="0" message="Add &lt;code&gt;core_version_requirement: ^8 || ^9&lt;/code&gt; to tikkie.info.yml to designate that the module is compatible with Drupal 9. See https://www.drupal.org/node/3070687." severity="error"/></file></checkstyle>
+

@@ -1,0 +1,3 @@
+Error: Class &#039;Drupal\upgrade_status\Commands\InvalidArgumentException&#039; not found in Drupal\upgrade_status\Commands\UpgradeStatusCommands->analyze() (line 144 of /home/thatoneguyinchicago/Documents/d9-ready/web/modules/contrib/upgrade_status/src/Commands/UpgradeStatusCommands.php).
+source   : [git] https://git.drupalcode.org/project/admincss.git 8.x-1.1
+source : https://git.drupalcode.org/project/admincss

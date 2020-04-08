@@ -1,0 +1,3 @@
+<?xml version="1.0"?>
+<checkstyle><file name="modules/contrib/state_machine/src/WorkflowGroupManager.php"><error line="20" message="Drupal\state_machine\WorkflowGroupManager must override __construct if using YAML plugins." severity="error"/></file><file name="modules/contrib/state_machine/src/WorkflowManager.php"><error line="19" message="Drupal\state_machine\WorkflowManager must override __construct if using YAML plugins." severity="error"/></file></checkstyle>
+

@@ -1,0 +1,3 @@
+<?xml version="1.0"?>
+<checkstyle><file name="modules/contrib/modules_weight/modules_weight.drush.inc"><error line="142" message="Call to deprecated function drush_log()." severity="error"/><error line="152" message="Call to deprecated function drush_log()." severity="error"/><error line="208" message="Call to deprecated function drush_log()." severity="error"/></file><file name="modules/contrib/modules_weight/modules_weight.info.yml"><error line="0" message="Add &lt;code&gt;core_version_requirement: ^8 || ^9&lt;/code&gt; to modules_weight.info.yml to designate that the module is compatible with Drupal 9. See https://www.drupal.org/node/3070687." severity="error"/></file></checkstyle>
+

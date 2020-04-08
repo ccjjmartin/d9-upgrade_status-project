@@ -1,0 +1,5 @@
+<?xml version="1.0"?>
+<checkstyle><file name="modules/contrib/bxslider/drush/bxslider.drush.inc"><error line="60" message="Call to deprecated function drush_log()." severity="error"/><error line="74" message="Call to deprecated function drush_delete_dir():&#10;Use \Symfony\Component\Filesystem\Filesystem::remove." severity="error"/><error line="75" message="Call to deprecated function drush_delete_dir():&#10;Use \Symfony\Component\Filesystem\Filesystem::remove." severity="error"/><error line="76" message="Call to deprecated function drush_log()." severity="error"/><error line="90" message="Call to deprecated function drush_log()." severity="error"/><error line="93" message="Call to deprecated function drush_log()." severity="error"/></file><file name="modules/contrib/bxslider/bxslider.info.yml"><error line="0" message="Add &lt;code&gt;core_version_requirement: ^8 || ^9&lt;/code&gt; to bxslider.info.yml to designate that the module is compatible with Drupal 9. See https://www.drupal.org/node/3070687." severity="error"/></file></checkstyle>
+
+source   : [git] https://git.drupalcode.org/project/bxslider.git 8.x-1.0
+source : https://cgit.drupalcode.org/bxslider

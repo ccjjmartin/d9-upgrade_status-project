@@ -1,0 +1,5 @@
+<?xml version="1.0"?>
+<checkstyle><file name="modules/contrib/administration_language_negotiation/src/Plugin/AdministrationLanguageNegotiationCondition/Paths.php"><error line="94" message="Parameter $alias_manager of method Drupal\administration_language_negotiation\Plugin\AdministrationLanguageNegotiationCondition\Paths::__construct() has typehint with deprecated interface Drupal\Core\Path\AliasManagerInterface. Deprecated in drupal:8.8.0 and is removed from drupal:9.0.0.&#10;Use \Drupal\path_alias\AliasManagerInterface." severity="warning"/></file><file name="modules/contrib/administration_language_negotiation/administration_language_negotiation.info.yml"><error line="0" message="Add &lt;code&gt;core_version_requirement: ^8 || ^9&lt;/code&gt; to administration_language_negotiation.info.yml to designate that the module is compatible with Drupal 9. See https://www.drupal.org/node/3070687." severity="error"/></file></checkstyle>
+
+source   : [git] https://git.drupalcode.org/project/administration_language_negotiation.git 8.x-1.8
+source : https://cgit.drupalcode.org/administration_language_negotiation

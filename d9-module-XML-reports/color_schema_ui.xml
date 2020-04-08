@@ -1,0 +1,1 @@
+Error: Class &#039;ScssPhp\ScssPhp\Compiler&#039; not found in Drupal\color_schema_ui\SCSSPhpCompilerFactory->create() (line 11 of /home/thatoneguyinchicago/Documents/drupal8-check/web/modules/contrib/color_schema_ui/src/SCSSPhpCompilerFactory.php).
