@@ -74,6 +74,7 @@ composer require ${col2}
 /app/vendor/bin/drush pm:uninstall $MODULENAME -y
 
 composer remove ${col2}
+rm -rf composer.lock
 
 rm -rf web/modules/contrib/$MODULENAME
 

@@ -10,3 +10,4 @@ web4/
 /.editorconfig
 /.gitattributes
 .lando.yml
+composer.lock
