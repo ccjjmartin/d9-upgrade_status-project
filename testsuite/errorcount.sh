@@ -27,7 +27,7 @@ cd ../d9-module-XML-reports
 
 ## First, let's define our keywords
 
-keywords=("deprecated method" "deprecated interface" "deprecated constant" "deprecated function" "deprecated class" "depricated trait" "assertFieldByXPath" "autoloaded" "assertIdentical"  "assertNoText" "does not exist" "deprecate" "drupal_set_message" "entity_get_display" "entity_get_form_display" "entity_view" "Fatal error" "no error" "not found and could not be autoloaded" "severity" "twig" "severity=\"error\"")
+keywords=("deprecated method" "deprecated interface" "deprecated constant" "deprecated function" "deprecated class" "depricated trait" "assertFieldByXPath" "autoloaded" "assertIdentical"  "assertNoText" "does not exist" "deprecate" "drupal_set_message" "entity_get_display" "entity_get_form_display" "entity_view" "Fatal error" "no error" "not found and could not be autoloaded" "severity" "twig" "severity=\"error\"" "composer")
 
 echo 'total files present'
 ls | wc -l

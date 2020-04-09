@@ -1,0 +1,78 @@
+# Reporting methodology.
+
+All individual modules should have a .xml file present.  
+
+Given that the xml files are standard, I identified the keyword that could be counted, correlating to the number of errors present in the module is the word 'severity'
+
+
+## Enter our old friend, the off by one issue
+
+If a report has:
+
+0 instances of 'severity' = There was an error with the report generation.
+known states:
+a) 0 byte size file - blanks always contain a Parsing error in the logs. the two I found were InfoParserDynamic.php LibraryDiscoveryParser.php
+b) 37 byte size file - issue with `upgrade_status:checkstyle` parsing, good news, all that I manually checked with `upgrade_status:analyze` produced a "No known issues found." result every time. 
+3) Fatal Error for some resason.  Plan to rerun these with latest stable local setup (as of 2020-04-08:12:17-06).  
+
+1 instance of 'severity' =
+
+This means the only final step is to mark the module D9 ready. 
+
+The only error reported hen there is on;y one instance of keyword is always like this
+```
+<checkstyle><file name="modules/contrib/menu_manipulator_sitemap/menu_manipulator_sitemap.info.yml"><error line="0" message="Add &lt;code&gt;core_version_requirement: ^8 || ^9&lt;/code&gt; to menu_manipulator_sitemap.info.yml to designate that the module is compatible with Drupal 9. See https://www.drupal.org/node/3070687." severity="error"/></file></checkstyle>
+```
+
+
+
+2+ instances of 'severity' = bad
+
+
+
+Fun
+
+TO CHECK NEXT
+composer.json
+autoloaded
+
+
+
+//
+#!/bin/bash
+
+chmod a+x . ##just make sure
+
+## Open the csv of the list of allllllll the modules
+INPUT=modules.csv
+
+##Safe way to deal with Internal File Separator or IFS resets
+OLDIFS=$IFS
+IFS=,
+
+## Error if fine not found
+[ ! -f $INPUT ] && { echo "$INPUT file not found"; exit 99; }
+
+## Loop through the CSV
+while read col1 col2
+do
+## threw errors if I didn't store this one as a variable, not sure why.
+## Store the machine name as a variable
+MODULENAME=$col1
+xmlfile=$col2
+
+## Print to screen just for keeping an eye on progress reasons.
+echo ${MODULENAME} 
+echo ${col2}
+
+## Write report to file
+grepresult=`grep -o "severity" ~/Documents/d9-upgrade_status-XML-reports/${MODULENAME}.xml  | wc -l`
+echo "${MODULENAME}${IFS}${grepresult}"  >> ../errortcountreport.csv 
+# grepresult='grep -o "severity" ~/Documents/d9-upgrade_status-XML-reports/${MODULENAME}.xml  | wc -l'
+# echo ${MODULENAME}','$grepresult >> ../errortcountreport.txt 
+
+## Done with the loop
+done < $INPUT
+
+## reset to the original IFS
+IFS=$OLDIFS

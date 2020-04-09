@@ -1,3 +1,0 @@
-<?xml version="1.0"?>
-<checkstyle><file name="modules/contrib/mailsystem/tests/src/Functional/AdminFormSettingsTest.php"><error line="" message="Class Behat\Mink\WebAssert not found and could not be autoloaded." severity="error"/><error line="37" message="Class Behat\Mink\WebAssert not found and could not be autoloaded." severity="error"/></file></checkstyle>
-

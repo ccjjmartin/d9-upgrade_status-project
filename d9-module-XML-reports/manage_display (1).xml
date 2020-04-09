@@ -1,3 +1,0 @@
-<?xml version="1.0"?>
-<checkstyle><file name="modules/contrib/manage_display/src/Plugin/Field/FieldFormatter/SubmittedFormatter.php"><error line="127" message="Call to deprecated function user_view(). Deprecated in drupal:8.7.0 and is removed from drupal:9.0.0. Use&#10;\Drupal::entityTypeManager()-&gt;getViewBuilder('user')-&gt;view() instead." severity="error"/></file></checkstyle>
-

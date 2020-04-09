@@ -1,6 +1,7 @@
 cm_config_tools.xml
 crazyegg.xml
 customfilter.xml
+file_mdm.xml
 flysystem_oss.xml
 group_content_field.xml
 high_tax_terms.xml
@@ -9,6 +10,7 @@ language_hierarchy.xml
 linenumbers.xml
 little_bobby_tables.xml
 live_chat_for_drupal.xml
+livehelperchat .xml
 livehelperchat.xml
 livereload.xml
 locale_tamper.xml
@@ -20,6 +22,7 @@ mailing_list.xml
 mailjet_sign_up.xml
 markaspot_map.xml
 markaspot_open311.xml
+markdown .xml
 markdown.xml
 memcache_status.xml
 paragraphs_collection_bootstrap.xml

@@ -1,3 +1,3 @@
 <?xml version="1.0"?>
-<checkstyle><file name="modules/contrib/migrate_source_csv/tests/src/Kernel/Plugin/migrate/source/CSVTest.php"><error line="" message="Class PHPUnit\Framework\TestCase not found and could not be autoloaded." severity="error"/><error line="13" message="Class PHPUnit\Framework\TestCase not found and could not be autoloaded." severity="error"/></file><file name="modules/contrib/migrate_source_csv/tests/src/Unit/Plugin/migrate/source/CSVUnitTest.php"><error line="" message="Class PHPUnit\Framework\TestCase not found and could not be autoloaded." severity="error"/><error line="16" message="Class PHPUnit\Framework\TestCase not found and could not be autoloaded." severity="error"/></file></checkstyle>
+<checkstyle/>
 
