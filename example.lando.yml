@@ -14,6 +14,33 @@ services:
       - 'test -d " web/sites/default" && chmod u+w web/sites/default || echo "this must be your first install"'
       - 'composer install'
       - 'chmod u+w web/sites/default'
+    overrides:
+      environment:
+        INPUT: "list.csv"
+
+  web2:
+    type: php:7.2
+    via: apache
+    webroot: web2
+    overrides:
+      environment:
+        INPUT: "list-2.csv"
+
+  web3:
+    type: php:7.2
+    via: apache
+    webroot: web3
+    overrides:
+      environment:
+        INPUT: "list-3.csv"
+
+  web4:
+    type: php:7.2
+    via: apache
+    webroot: web4
+    overrides:
+      environment:
+        INPUT: "list-4.csv"
 
 tooling:
   drush:

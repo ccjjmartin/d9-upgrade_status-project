@@ -53,7 +53,7 @@ MODULENAME=$col1
 echo $MODULENAME
 
 git checkout -b $MODULENAME
-
+chmod u+w web/sites/default
 # Install the module with composer
 chmod u+w web/sites/default/
 composer require ${col2}
@@ -63,7 +63,7 @@ composer require ${col2}
 # YOU MUST ENABLE THE MODULE TO MAKE upgrade_status:checkstyle work
 /app/vendor/bin/drush pm:enable upgrade_status $MODULENAME -y
 
-
+chmod u+w web/sites/default
 ## Push to a .xml file
 /app/vendor/bin/drush upgrade_status:checkstyle ${MODULENAME} > reports/${MODULENAME}.xml
 

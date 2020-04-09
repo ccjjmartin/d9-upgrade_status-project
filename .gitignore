@@ -1,12 +1,14 @@
 archive/
 reports/
 vendor/
+testsuite/results
 web/
 web2/
 web3/
 web4/
 *.csv
 *.xml
+*.zip
 /.editorconfig
 /.gitattributes
 .lando.yml

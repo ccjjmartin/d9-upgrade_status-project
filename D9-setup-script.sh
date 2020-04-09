@@ -26,38 +26,27 @@ else
 	SITENAME=$1
 fi
 
-
+mkdir reports
 ## Composer install the site
 composer create-project drupal/recommended-project ${SITENAME}
 
-
 ## cd
-
 cd ${SITENAME}
 
-php ./web/core/scripts/drupal quick-start minimal &
-sleep 10
+
 
 
 echo 'make sure modulelistmachinenames1.csv and script is in place'
-
-cp ~/Documents/modulelistmachinenames1.csv .
-cp ~/Documents/d9upgrade_statuscheckall.sh .
+chmod a+x d9upgrade_statuscheckall.sh
+curl -O https://raw.githubusercontent.com/mcdwayne/d9-upgrade_status-project/master/D9-setup-script.sh
 
 chmod u+w web/sites/default
 
-composer require drush/drush
-composer require drupal/upgrade_status
+curl -O https://raw.githubusercontent.com/mcdwayne/d9-upgrade_status-project/master/dwayne-final-composer.json
+
+mv dwayne-final-composer.json composer.json
 
 curl https://git.drupalcode.org/project/upgrade_status/-/raw/8.x-2.x/src/Commands/UpgradeStatusCommands.php > web/modules/contrib/upgrade_status/src/Commands/UpgradeStatusCommands.php
 
 
-
-drush pm:enable upgrade_status -y
-
-git init
-git add .
-git rm --cached web/modules/contrib/git_deploy
-git commit -m 'initial commit'
-
-echo 'shold be set up right??  Check that csv'
+echo 'should be set up right??  Check that csv'
